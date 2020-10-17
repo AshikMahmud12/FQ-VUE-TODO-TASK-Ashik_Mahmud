@@ -1,18 +1,23 @@
 <template>
-  
-  <abc></abc>
+  <div id="app">
+  <List></List>
+  <product></product>
           
-  
+ </div> 
 </template>
 
 <script>
  import BazarList from './components/Bazar-List.vue'
+ import Data from './components/productAdding'
 
 export default {
   name: 'App',
  components:{
-abc: BazarList
+List: BazarList,
+product: Data
  }
+
+
 }
 
 

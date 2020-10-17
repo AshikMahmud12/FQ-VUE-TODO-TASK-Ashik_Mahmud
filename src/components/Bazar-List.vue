@@ -6,7 +6,7 @@
 
 <h3 class="text-center mb-4">Bazar List</h3>
 
-<input class="input" v-model="newToDo" >
+<input class="input" placeholder="input the item" v-model="newToDo" >
 <button class="add-button ml-3" v-on:click="add()">Add</button>
 <ul style="list-style-type: none;">
 <li v-for="(todo, index) in existingToDo" :key="index.id" class="mt-3">
@@ -35,9 +35,9 @@ export default{
     return {
 newToDo: '',
 existingToDo:[
-  { text: 'rice',price: 12.5,  id:0 },                      
-  { text: 'wheat', price: 12.5, id:1 },
-  { text: 'oil', price: 12.5,  id:2 }
+  { text: 'rice',price: 42.5,  id:0 },                      
+  { text: 'wheat', price: 26.5, id:1 },
+  { text: 'oil', price: 65.5,  id:2 }
 ]
     }
   },
